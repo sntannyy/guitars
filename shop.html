@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Культовые гитары в истории | Каталог</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f0bc5c;
+      margin: 8px 16px 4px 16px;
+      display: block;
+      border-top: 1px solid #4a382a;
+      padding-top: 8px;
+    }
+    .card .buy-btn {
+      margin: 0 16px 18px 16px;
+      width: auto;
+      display: inline-block;
+    }
+    /* Изменение размера картинок — не обрезать, а вписывать целиком */
+    .card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #1a1512;
+      padding: 12px;
+      border-bottom: 1px solid #7a5a3a;
+      transition: transform 0.4s ease;
+    }
+    .card:hover .card-img {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+<div id="chords-container"></div>
+<button id="musicToggleBtn" class="music-toggle">MUSIC OFF</button>
+<button id="scrollTopBtn" class="scroll-top" title="Наверх">↑</button>
+
+<audio id="bgMusic" loop preload="auto">
+  <source src="music/song2.mp3" type="audio/mpeg">
+</audio>
+
+<div class="wrapper">
+  <div class="breadcrumbs"><a href="index.html">Главная</a> / <a href="shop.html">Культовые гитары</a></div>
+
+  <div class="nav-bar">
+    <a href="index.html" class="nav-btn">Главная</a>
+    <a href="shop.html" class="nav-btn active">Гитары</a>
+    <a href="guides.html" class="nav-btn">Обучение</a>
+  </div>
+
+  <h1>Культовые гитары в истории</h1>
+  <div class="intro-text">
+    <p>Модели, которые изменили звук музыки навсегда. У каждой из них — своя эпоха, свои легендарные владельцы и уникальный голос, узнаваемый миллионами.</p>
+  </div>
+
+  <div class="grid-cards">
+    <!-- Martin D-28 -->
+    <div class="card">
+      <img class="card-img" src="images/5.png" alt="Martin D-28">
+      <div class="card-title">Martin D-28</div>
+      <div class="card-desc">Этот дредноут считается эталоном акустической гитары. Выпускается с 1931 года и стал выбором таких легенд, как Элвис Пресли, Джонни Кэш и Курт Кобейн. Её мощный, объёмный звук идеально подходит для фолка, кантри и рок-баллад.</div>
+      <div class="price">от 189 990 ₽</div>
+      <button class="buy-btn">Подробнее</button>
+    </div>
+
+    <!-- Gibson J-45 -->
+    <div class="card">
+      <img class="card-img" src="images/6.png" alt="Gibson J-45">
+      <div class="card-title">Gibson J-45</div>
+      <div class="card-desc">«Рабочая лошадка» Gibson, появившаяся в 1942 году. Её тёплый, чуть приглушённый звук сделал её любимицей фолк- и рок-музыкантов. На ней играли Боб Дилан и Джон Леннон. Она и сегодня остаётся одной из самых записываемых акустических гитар в мире.</div>
+      <div class="price">от 199 990 ₽</div>
+      <button class="buy-btn">Подробнее</button>
+    </div>
+
+    <!-- Fender Stratocaster -->
+    <div class="card">
+      <img class="card-img" src="images/7.png" alt="Fender Stratocaster">
+      <div class="card-title">Fender Stratocaster</div>
+      <div class="card-desc">Икона рока, представленная в 1954 году. Её узнаваемый дизайн, три сингловых звукоснимателя и удобный гриф покорили миллионы. Легендарные владельцы: Джими Хендрикс, Эрик Клэптон, Дэвид Гилмор. Stratocaster звучал на величайших рок-записях всех времён.</div>
+      <div class="price">от 89 990 ₽</div>
+      <button class="buy-btn">Подробнее</button>
+    </div>
+
+    <!-- Gibson Les Paul -->
+    <div class="card">
+      <img class="card-img" src="images/8.png" alt="Gibson Les Paul">
+      <div class="card-title">Gibson Les Paul</div>
+      <div class="card-desc">Рождённая в 1952 году, эта гитара стала символом хард-рока и хэви-метала. Мощные хамбакеры, массивный корпус из махагони и невероятный сустейн. На ней играли Джимми Пейдж, Слэш и Закк Уайлд. Les Paul — это голос рок-н-ролльного драйва.</div>
+      <div class="price">от 159 990 ₽</div>
+      <button class="buy-btn">Подробнее</button>
+    </div>
+
+    <!-- Taylor 814ce -->
+    <div class="card">
+      <img class="card-img" src="images/9.png" alt="Taylor 814ce">
+      <div class="card-title">Taylor 814ce</div>
+      <div class="card-desc">Современная классика от американского бренда Taylor. Появившись в 1990-х, эта модель покорила музыкантов своим ярким, кристально чистым звуком и безупречной сборкой. Её выбирают такие артисты, как Джейсон Мраз и Зак Браун. Идеальный баланс для студии и сцены.</div>
+      <div class="price">от 234 990 ₽</div>
+      <button class="buy-btn">Подробнее</button>
+    </div>
+
+    <!-- Ramirez 1A -->
+    <div class="card">
+      <img class="card-img" src="images/10.png" alt="Ramirez 1A">
+      <div class="card-title">Ramirez 1A</div>
+      <div class="card-desc">Эталон классической гитары испанской школы. Созданная мастерской Ramirez в 1960-х, она стала выбором Андреса Сеговии и многих других виртуозов. Её тёплое, глубокое звучание — это голос испанской музыки и фламенко. Ручная работа, редкие породы дерева, высочайшее качество.</div>
+      <div class="price">от 349 990 ₽</div>
+      <button class="buy-btn">Подробнее</button>
+    </div>
+  </div>
+
+  <div class="intro-text" style="text-align: center;">Каждая из этих гитар оставила след в истории музыки. Найдите ту, чей голос отзовётся в вашем сердце.</div>
+
+  <footer>
+    <p>2025 Guitar Legends | Цены ориентировочные</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
